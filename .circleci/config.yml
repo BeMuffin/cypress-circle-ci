@@ -1,0 +1,13 @@
+version: 2.1
+
+orbs:
+  cypress: cypress-io/cypress@3
+
+workflows:
+  version: 2
+  e2e-tests:
+    jobs:
+      - cypress/run:
+          start: npm start
+          wait-on: 'http://localhost:3000'
+          browser: chrome
