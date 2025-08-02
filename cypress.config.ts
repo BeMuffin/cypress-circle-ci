@@ -11,6 +11,7 @@ export default defineConfig({
     supportFile: 'cypress/support/index.ts',
     video: true,
     screenshotsFolder: 'cypress/screenshots',
+  
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
